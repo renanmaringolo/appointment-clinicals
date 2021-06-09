@@ -1,0 +1,35 @@
+version: "3.9"
+services:
+  db:
+    image: postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    volumes:
+      - datadb:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: built
+      POSTGRES_DB: built
+      POSTGRES_USER: built
+    networks:
+      - builtnet
+
+  web:
+    build:
+      context: .
+    working_dir: /challenge
+    volumes:
+      - .:/challenge/
+      - gemsCache:/usr/local/bundle
+    ports:
+      - "3000:3000"
+    command: bash -c "bundle install && bundle exec rails server -b 0.0.0.0"
+    networks:
+      - builtnet
+
+volumes:
+  datadb:
+  gemsCache:
+
+networks:
+  builtnet:
