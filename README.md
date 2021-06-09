@@ -11,7 +11,6 @@ Este repositório foi criado para propor a solução do seguinte desafio: Desafi
 
 ### Testando a aplicação
 Atualmente o projeto conta com xx,xx% de cobertura de teste, de acordo com o SimpleCov.
-* Executar bundle exec rspec em seu terminal para que os testes sejam executados e você veja seu retorno.
 
 ## Rodando o projeto localmente
 
