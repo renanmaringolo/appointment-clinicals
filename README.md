@@ -3,7 +3,7 @@
 Este repositório foi criado para propor a solução do seguinte desafio: Desafio Challenge Built Code.
 
 ## <a name="tech_info"></a>Requisitos
-* Linguagem: Ruby (v 3.0.0)
+* Docker: (v 20.10.7)
 
 ## Setup
 1) Possuir Docker instalado na sua máquina (versão utilizada neste projeto de preferência)
