@@ -13,12 +13,14 @@ Este repositório foi criado para propor a solução do seguinte desafio: Desafi
 Atualmente o projeto conta com xx,xx% de cobertura de teste, de acordo com o SimpleCov.
 
 ## Rodando o projeto localmente
+1) Executar 'make web' em um terminal para subir o servidor na porta 3000.
+2) Executar 'make udb' em um terminal para subir o Banco de Dados. Neste projeto usa-se o Postgres.
+3) Caso queira fazer consultas no DB, execute 'make psql'
 
 ### Observação importante ao rodar a aplicação
+* Essa aplicação está configurada para fazer o encaminhamento de porta na 3000, caso tenha outro projeto rodando nesta porta, será necessário mudar o docker-compose.yml ou derrubar a aplicação que está rodando nesta porta. A segunda opção é a mais adequada.
 
 ## Gems
 * RSpec (um dos métodos possíveis dentro do Ruby/Rails para desenvolver as classes de testes. Gosto muito do padrão do RSpec);
 * Simplecov (indica o percentual de cobertura de testes do seu projeto;
 * Byebug (ferramenta para debuggin, caso preciso identificar alguma falha no meu teste e analisar como estão chegando dados);
-* Rubocop (responsável por checar se o desenvolvedor está seguindo boas práticas de desenvolvimento em identação, atribuição de variáveis, definição de métodos, entre outros);
-
