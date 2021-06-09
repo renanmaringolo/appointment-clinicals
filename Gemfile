@@ -14,6 +14,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bootsnap', '>= 1.4.2', require: false
 
 group :test do
+  gem 'capybara'
   gem 'simplecov', require: false
 end
 
