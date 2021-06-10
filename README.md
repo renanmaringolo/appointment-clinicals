@@ -24,3 +24,5 @@ Atualmente o projeto conta com xx,xx% de cobertura de teste, de acordo com o Sim
 * RSpec (um dos métodos possíveis dentro do Ruby/Rails para desenvolver as classes de testes. Gosto muito do padrão do RSpec);
 * Simplecov (indica o percentual de cobertura de testes do seu projeto;
 * Byebug (ferramenta para debuggin, caso preciso identificar alguma falha no meu teste e analisar como estão chegando dados);
+* Devise (é uma solução de autenticação para Rails criada com Warden que prevê vários módulos de autenticação);
+* Capybara (responsável por simular como um usuário interage com aplicações web);
