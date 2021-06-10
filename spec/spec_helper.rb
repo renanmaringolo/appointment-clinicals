@@ -1,4 +1,3 @@
-require 'capybara/rails'
 require 'simplecov'
 SimpleCov.start
 
