@@ -57,8 +57,10 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: challenge_test
-
+  database: built
+  host: db
+  username: built
+  password: built
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
 # ever seen by anyone, they now have access to your database.
@@ -81,6 +83,7 @@ test:
 #
 production:
   <<: *default
-  database: challenge_production
-  username: challenge
-  password: <%= ENV['CHALLENGE_DATABASE_PASSWORD'] %>
+  database: built
+  host: db
+  username: built
+  password: built
