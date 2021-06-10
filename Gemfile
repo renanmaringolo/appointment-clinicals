@@ -15,6 +15,7 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 group :test do
   gem 'capybara'
+  gem 'shoulda-matchers', '~> 4.0'
   gem 'simplecov', require: false
 end
 
