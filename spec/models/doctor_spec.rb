@@ -11,4 +11,8 @@ RSpec.describe Doctor, type: :model do
     it { should validate_length_of(:crm).is_at_least(4).is_at_most(10) }
     it { should validate_length_of(:name).is_at_most(130) }
   end
+
+  describe "association with model" do
+    it { should have_many(:appointments) }
+  end
 end

@@ -10,4 +10,8 @@ RSpec.describe Patient, type: :model do
     it { should validate_length_of(:cpf).is_equal_to(11) }
     it { should validate_length_of(:name).is_at_most(130) }
   end
+
+  describe "association with model" do
+    it { should have_many(:appointments) }
+  end
 end
