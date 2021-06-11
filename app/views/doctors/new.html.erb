@@ -1,0 +1,18 @@
+<h1>Novo Registro</h1>
+<%= form_for @doctor do |f| %>
+  <div>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+  <div>
+    <%= f.label :crm %>
+    <%= f.text_field :crm, minlength: "4", maxlength: "10", required: true %>
+  </div>
+  <div>
+    <%= f.label :crm_uf %>
+    <%= f.text_field :crm_uf, minlegth: "2", maxlength: "2", required: true %>
+  </div>
+  <div>
+    <%= f.submit 'Salvar' %>
+  </div>
+<% end %>

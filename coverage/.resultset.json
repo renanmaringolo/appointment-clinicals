@@ -1,20 +1,31 @@
 {
   "RSpec": {
     "coverage": {
-      "/challenge/spec/models/appointment_spec.rb": {
+      "/challenge/spec/features/create_doctor_spec.rb": {
         "lines": [
           1,
           null,
           1,
           1,
-          2,
-          2,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
           null,
           null,
           1,
-          2,
-          2,
-          null,
+          1,
+          1,
           null,
           null
         ]
@@ -43,7 +54,7 @@
           null,
           null,
           null,
-          null,
+          2,
           null,
           null,
           null,
@@ -68,6 +79,7 @@
           null,
           null,
           null,
+          1,
           1,
           null,
           null,
@@ -695,7 +707,15 @@
           1,
           1,
           1,
+          0,
+          null,
+          null,
+          null,
           1,
+          0,
+          null,
+          null,
+          null,
           1,
           1,
           null,
@@ -706,9 +726,9 @@
         "lines": [
           1,
           1,
-          7,
-          7,
-          7,
+          8,
+          8,
+          8,
           null,
           null
         ]
@@ -724,8 +744,22 @@
           null
         ]
       },
+      "/challenge/spec/factories/users.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
       "/challenge/config/routes.rb": {
         "lines": [
+          1,
           1,
           1,
           1,
@@ -752,6 +786,44 @@
       "/challenge/app/helpers/application_helper.rb": {
         "lines": [
           1,
+          null
+        ]
+      },
+      "/challenge/spec/support/warden.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          19,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
+      "/challenge/spec/models/appointment_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null,
           null
         ]
       },
@@ -840,8 +912,55 @@
           1,
           null
         ]
+      },
+      "/challenge/app/controllers/home_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/challenge/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/challenge/app/controllers/doctors_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1623374177
+    "timestamp": 1623390264
   }
 }

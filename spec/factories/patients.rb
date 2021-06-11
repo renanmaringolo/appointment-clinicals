@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :patient do
-    name { 'Cléber Machado' }
-    birth_date { '2021-06-10' }
-    cpf { '41088899955' }
+    name { Faker::Name.name }
+    birth_date { Faker::Date.birthday(min_age: 18, max_age: 65) }
+    cpf { Faker::IDNumber.brazilian_citizen_number }
   end
 end

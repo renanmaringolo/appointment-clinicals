@@ -1,5 +1,6 @@
 require 'simplecov'
 SimpleCov.start
+require 'capybara/rspec'
 
 # Previous content of test helper now starts here
 
