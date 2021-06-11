@@ -2,3 +2,4 @@
 <% @doctors.each do |doctor| %>
   <%= link_to doctor.name, doctor_path(doctor) %>
 <% end %>
+<p><%= link_to 'Retornar ao menu principal', root_path %></p>

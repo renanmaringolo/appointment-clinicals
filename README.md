@@ -7,7 +7,8 @@ Este repositório foi criado para propor a solução do seguinte desafio: Desafi
 
 ## Setup
 1) Possuir Docker instalado na sua máquina (versão utilizada neste projeto de preferência)
-2) Baixar este repositório com o comando: git clone git@github.com:renanmaringolo/challenge-bCode.git
+2) Instalar Docker Compose
+3) Baixar este repositório com o comando: git clone git@github.com:renanmaringolo/challenge-bCode.git
 
 ### Testando a aplicação
 Atualmente o projeto conta com xx,xx% de cobertura de teste, de acordo com o SimpleCov.
