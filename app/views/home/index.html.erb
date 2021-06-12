@@ -3,6 +3,7 @@
 <% if user_signed_in?  %>
   <span>Hello, </span><%= current_user.email %>
 <p><%= link_to "Registrar Médico", new_doctor_path %></p>
+<p><%= link_to "Registrar Paciente", new_patient_path %></p>
   <p><%= link_to 'Sign out', destroy_user_session_path, method: :delete %></p>
 <% else %>
   <%= link_to 'Sign in', new_user_session_path %>

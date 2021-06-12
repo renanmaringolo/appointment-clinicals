@@ -1,0 +1,19 @@
+<h1>Novo Registro</h1>
+<%= form_for @patient do |f| %>
+  <div>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+  <div>
+    <%= f.label :cpf %>
+    <%= f.text_field :cpf, minlength: "4", maxlength: "11", required: true %>
+  </div>
+  <div>
+    <%= f.label :birth_date %>
+    <%= f.text_field :birth_date %>
+  </div>
+  <div>
+    <%= f.submit 'Salvar' %>
+    <p><%= link_to 'Retornar ao menu principal', root_path %></p>
+  </div>
+<% end %>

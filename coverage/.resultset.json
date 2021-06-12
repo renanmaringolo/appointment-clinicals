@@ -564,7 +564,7 @@
           null,
           null,
           null,
-          null,
+          1,
           null,
           null,
           null,
@@ -737,9 +737,9 @@
         "lines": [
           1,
           1,
-          6,
-          6,
-          6,
+          7,
+          7,
+          7,
           null,
           null
         ]
@@ -749,16 +749,17 @@
           1,
           1,
           1,
-          1,
+          2,
           null,
-          2,
-          2,
+          3,
+          3,
           null,
           null
         ]
       },
       "/challenge/config/routes.rb": {
         "lines": [
+          1,
           1,
           1,
           1,
@@ -796,7 +797,7 @@
           1,
           null,
           1,
-          19,
+          21,
           null,
           null,
           1,
@@ -805,6 +806,35 @@
           null,
           1,
           0,
+          null,
+          null
+        ]
+      },
+      "/challenge/spec/features/create_patient_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
           null,
           null
         ]
@@ -917,8 +947,6 @@
         "lines": [
           1,
           1,
-          2,
-          null,
           null
         ]
       },
@@ -931,6 +959,44 @@
       "/challenge/app/controllers/doctors_controller.rb": {
         "lines": [
           1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/challenge/app/controllers/patients_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
           1,
           1,
           null,
@@ -963,6 +1029,6 @@
         ]
       }
     },
-    "timestamp": 1623448850
+    "timestamp": 1623463952
   }
 }
