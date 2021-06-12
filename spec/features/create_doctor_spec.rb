@@ -9,8 +9,8 @@ feature 'create doctor' do
     visit root_path
     click_on 'Registrar Médico'
     fill_in 'Name', with: doc.name
-    fill_in 'Crm', with: Faker::Number.leading_zero_number(digits: 10)
-    fill_in 'Crm uf', with: Faker::Name.initials(number: 2)
+    fill_in 'Crm', with: doc.crm
+    fill_in 'Crm uf', with: doc.crm_uf
 
     click_on 'Salvar'
 

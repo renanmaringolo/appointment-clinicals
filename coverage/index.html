@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2021-06-12T19:25:17+00:00">2021-06-12T19:25:17+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2021-06-12T19:31:56+00:00">2021-06-12T19:31:56+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -8721,7 +8721,7 @@
 
             
 
-            <code class="ruby">    birth_date { Faker::Date.birthday(min_age: 18, max_age: 65) }</code>
+            <code class="ruby">    cpf { Faker::IDNumber.brazilian_citizen_number }</code>
           </li>
         </div>
       
@@ -8732,7 +8732,7 @@
 
             
 
-            <code class="ruby">    cpf { Faker::IDNumber.brazilian_citizen_number }</code>
+            <code class="ruby">    birth_date { Faker::Date.birthday(min_age: 18, max_age: 65) }</code>
           </li>
         </div>
       
@@ -9047,7 +9047,7 @@
 
             
 
-            <code class="ruby">    fill_in &#39;Crm&#39;, with: Faker::Number.leading_zero_number(digits: 10)</code>
+            <code class="ruby">    fill_in &#39;Crm&#39;, with: doc.crm</code>
           </li>
         </div>
       
@@ -9058,7 +9058,7 @@
 
             
 
-            <code class="ruby">    fill_in &#39;Crm uf&#39;, with: Faker::Name.initials(number: 2)</code>
+            <code class="ruby">    fill_in &#39;Crm uf&#39;, with: doc.crm_uf</code>
           </li>
         </div>
       
@@ -9353,7 +9353,7 @@
 
             
 
-            <code class="ruby">    fill_in &#39;Cpf&#39;, with: Faker::Number.leading_zero_number(digits: 11)</code>
+            <code class="ruby">    fill_in &#39;Cpf&#39;, with: patient.cpf</code>
           </li>
         </div>
       
@@ -9364,7 +9364,7 @@
 
             
 
-            <code class="ruby">    fill_in &#39;Birth date&#39;, with: &#39;12/03/2019&#39;</code>
+            <code class="ruby">    fill_in &#39;Birth date&#39;, with: patient.birth_date</code>
           </li>
         </div>
       
