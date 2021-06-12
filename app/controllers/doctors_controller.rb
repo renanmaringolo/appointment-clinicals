@@ -15,7 +15,7 @@ class DoctorsController < ApplicationController
     @doctor = Doctor.new(doctor_params)
 
     if @doctor.save
-      flash[:notice] = 'Médico cadastrado com sucesso'
+      flash[:notice] = 'Médico cadastrado com sucesso!'
       redirect_to doctors_path
     else
       render :new

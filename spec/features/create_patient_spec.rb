@@ -8,7 +8,7 @@ feature 'create patient' do
     login_as user
     visit root_path
     click_on 'Registrar Paciente'
-    fill_in 'Name', with: Faker::Name.name_with_middle
+    fill_in 'Name', with: patient.name
     fill_in 'Cpf', with: Faker::Number.leading_zero_number(digits: 11)
     fill_in 'Birth date', with: '12/03/2019'
 
