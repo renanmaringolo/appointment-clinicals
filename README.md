@@ -1,6 +1,6 @@
 # README
 
-Este repositório foi criado para propor a solução do seguinte desafio: Desafio Challenge Built Code.
+Este repositório foi criado para propor a solução do seguinte desafio: Desafio Built Code.
 
 ## <a name="tech_info"></a>Requisitos
 * Docker: (v 20.10.7)
@@ -8,7 +8,7 @@ Este repositório foi criado para propor a solução do seguinte desafio: Desafi
 ## Setup
 1) Possuir Docker instalado na sua máquina (versão utilizada neste projeto de preferência)
 2) Possuir Docker Compose instalado
-3) Baixar este repositório com o comando: git clone git@github.com:renanmaringolo/challenge-bCode.git
+3) Baixar este repositório com o comando: git clone git@github.com:renanmaringolo/appointment-clinicals.git
 
 ### Testando a aplicação
 Atualmente o projeto conta com xx,xx% de cobertura de teste, de acordo com o SimpleCov.
