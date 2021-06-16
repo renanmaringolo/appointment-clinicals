@@ -3,5 +3,6 @@
 <h2><%= "CRM: #{@doctor.crm}" %></h2>
 <h2><%= "CRM UF: #{@doctor.crm_uf}" %></h2>
 <p><%= link_to 'Editar', edit_doctor_path(@doctor) %></p>
+<p><%= link_to 'Excluir', doctor_path(@doctor), method: :delete %></p>
 
 <p><%= link_to 'Retornar ao menu principal', root_path %></p>
