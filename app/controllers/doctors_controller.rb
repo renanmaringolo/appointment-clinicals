@@ -1,4 +1,5 @@
 class DoctorsController < ApplicationController
+  before_action :doctor_finder, only: %i(edit update)
   def new
     @doctor = Doctor.new
   end
@@ -22,7 +23,22 @@ class DoctorsController < ApplicationController
     end
   end
 
+  def edit; end
+
+  def update
+    if @doctor.update(doctor_params)
+      flash[:notice] = 'Médico atualizado com sucesso.'
+      redirect_to @doctor
+    else
+      render :edit
+    end
+  end
+
   private
+
+  def doctor_finder
+    @doctor = Doctor.find(params[:id])
+  end
 
   def doctor_params
     params.require(:doctor).permit %i(id name crm crm_uf)

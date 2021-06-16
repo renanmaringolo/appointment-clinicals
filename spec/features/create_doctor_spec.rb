@@ -8,9 +8,9 @@ feature 'create doctor' do
     login_as user
     visit root_path
     click_on 'Registrar Médico'
-    fill_in 'Name', with: doc.name
-    fill_in 'Crm', with: doc.crm
-    fill_in 'Crm uf', with: doc.crm_uf
+    fill_in 'Nome', with: doc.name
+    fill_in 'CRM', with: doc.crm
+    fill_in 'CRM_UF', with: doc.crm_uf
 
     click_on 'Salvar'
 

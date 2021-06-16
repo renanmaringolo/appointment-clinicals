@@ -1,5 +1,5 @@
 <h1>Lista de Médicos</h1>
-<% @doctors.each do |doctor| %>
+<% @doctors.first(20).each do |doctor| %>
   <%= link_to doctor.name, doctor_path(doctor) %>
 <% end %>
 <p><%= link_to 'Retornar ao menu principal', root_path %></p>

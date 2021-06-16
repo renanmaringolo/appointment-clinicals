@@ -5,6 +5,7 @@
 <p><%= link_to "Registrar Médico", new_doctor_path %></p>
 <p><%= link_to "Registrar Paciente", new_patient_path %></p>
 <p><%= link_to "Marcar Consulta", new_appointment_path %></p>
+<p><%= link_to "Lista de Médicos", doctors_path %></p>
   <p><%= link_to 'Sign out', destroy_user_session_path, method: :delete %></p>
 <% else %>
   <%= link_to 'Sign in', new_user_session_path %>
