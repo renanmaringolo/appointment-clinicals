@@ -1,6 +1,6 @@
 # README
 
-Este repositório foi criado para propor a solução do seguinte desafio: Desafio Built Code.
+Este repositório foi criado para propor a solução do seguinte desafio: BuiltCode Appointments.
 
 ## <a name="tech_info"></a>Requisitos
 * Docker: (v 20.10.7)
