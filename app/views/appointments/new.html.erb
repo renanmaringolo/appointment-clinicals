@@ -1,0 +1,16 @@
+<h1>Nova Consulta</h1>
+<%= form_for @appointment do |f| %>
+  <div>
+    <%= f.label :starts_at, 'Início da Consulta' %>
+    <%= f.datetime_field :starts_at  %>
+    <%= f.label :ends_at, 'Término da Consulta' %>
+    <%= f.datetime_field :ends_at %>
+    <%= f.label :doctor_id, 'Médico' %>
+    <%= f.collection_select(:doctor_id, Doctor.all, :id, :name_crm) %>
+    <%= f.label :patient_id, 'Paciente' %>
+    <%= f.collection_select(:patient_id, Patient.all, :id, :name_cpf) %>
+  </div>
+    <%= f.submit 'Salvar' %>
+    <p><%= link_to 'Retornar ao menu principal', root_path %></p>
+  <% end %>
+  

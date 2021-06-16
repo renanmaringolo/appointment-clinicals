@@ -4,5 +4,9 @@ class Patient < ApplicationRecord
   validates :birth_date, presence: true
 
   has_many :appointments
+
+  def name_cpf
+    "#{name} - #{cpf}"
+  end
 end
 
