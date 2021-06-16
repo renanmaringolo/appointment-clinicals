@@ -21,7 +21,7 @@ Atualmente o projeto conta com xx,xx% de cobertura de teste, de acordo com o Sim
 6) Caso queira fazer consultas no DB, execute 'make psql' no seu terminal (fora do container)
 
 ### Observação importante ao rodar a aplicação
-* Essa aplicação está configurada para fazer o encaminhamento de porta na 3000, caso tenha outro projeto rodando nesta porta, será necessário mudar o docker-compose.yml ou derrubar a aplicação que está rodando nesta porta. A segunda opção é a mais adequada.
+* Essa aplicação está configurada para fazer o encaminhamento na porta 3000, caso tenha outro projeto rodando nesta porta, será necessário mudar o docker-compose.yml ou derrubar a aplicação que está rodando nesta porta. A segunda opção é a mais adequada.
 
 * Se após esses passos a aplicação ainda peça para configurar webpacker/yarn, volte no setor "Rodando o projeto localmente", entre no container e execute as linhas de comando a seguir:
   - curl https://deb.nodesource.com/setup_12.x | bash
