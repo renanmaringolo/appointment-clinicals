@@ -29,6 +29,13 @@ Atualmente o projeto conta com 96.71% de cobertura de teste, de acordo com o Sim
   - echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
   - apt update && apt install nodejs yarn
 
+### Criando Consultas
+* Crie um Doctor e preencha todos os campos.
+* Crie um Patient e preencha todos os campos.
+* Crie um Appointment e preencha todos os campos.
+ - Feito isto, ir à Página Principal e ver todas as consultas agendadas, navegar até a data da consulta e a encontrará devidamente cadastrada.
+ - Experimente editar e excluir consultas, pacientes e médicos.
+
 ## Gems
 * RSpec (um dos métodos possíveis dentro do Ruby/Rails para desenvolver as classes de testes. Gosto muito do padrão do RSpec);
 * Simplecov (indica o percentual de cobertura de testes do seu projeto;
