@@ -1,8 +1,9 @@
 <h1>Calendário de Consultas</h1>
 <p><%= link_to 'Retornar ao menu principal', root_path %></p>
-<%= month_calendar(attribute: :starts_at) do |date| %>
-  <%= date %>
-  <% @appointments.each do |appointment| %>
+<%= month_calendar do |date| %>
+  <%= date.day %>
+  <% @appointments.select { |m| m.starts_at.to_date == date }.each do |appointment| %> 
+    <div><%= appointment.patient.name %></div>
     <%= link_to "Paciente #{appointment.patient.name}", appointment_path(appointment) %>
   <% end %>
 <% end %>
