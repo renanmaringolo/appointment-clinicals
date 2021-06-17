@@ -1,4 +1,6 @@
 class PatientsController < ApplicationController
+  before_action :patient_finder, only: %i(edit update)
+
   def new
     @patient = Patient.new
   end
@@ -22,7 +24,22 @@ class PatientsController < ApplicationController
     end
   end
 
+  def edit; end
+
+  def update
+    if @patient.update(patient_params)
+      flash[:notice] = 'Paciente atualizado com sucesso.'
+      redirect_to @patient
+    else
+      render :edit
+    end
+  end
+
   private
+
+  def patient_finder
+    @patient = Patient.find(params[:id])
+  end
 
   def patient_params
     params.require(:patient).permit %i(id name cpf birth_date)

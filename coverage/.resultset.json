@@ -737,9 +737,9 @@
         "lines": [
           1,
           1,
-          8,
-          8,
-          8,
+          32,
+          32,
+          32,
           null,
           null
         ]
@@ -749,10 +749,10 @@
           1,
           1,
           1,
-          7,
+          10,
           null,
-          8,
-          8,
+          11,
+          11,
           null,
           null
         ]
@@ -800,7 +800,7 @@
           1,
           null,
           1,
-          26,
+          29,
           null,
           null,
           1,
@@ -888,6 +888,31 @@
           null
         ]
       },
+      "/challenge/spec/features/edit_patient_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
       "/challenge/spec/features/user_register_appointment_spec.rb": {
         "lines": [
           1,
@@ -915,6 +940,41 @@
         ]
       },
       "/challenge/spec/features/view_list_doctors_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/challenge/spec/features/view_list_patients_spec.rb": {
         "lines": [
           1,
           null,
@@ -1047,7 +1107,7 @@
           1,
           null,
           1,
-          5,
+          6,
           null,
           null,
           null
@@ -1078,6 +1138,7 @@
         "lines": [
           1,
           1,
+          null,
           1,
           1,
           null,
@@ -1138,20 +1199,33 @@
         "lines": [
           1,
           1,
+          null,
+          1,
           1,
           null,
           null,
           1,
+          2,
+          null,
+          null,
+          1,
+          4,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
           0,
           null,
           null,
-          1,
-          1,
-          null,
           null,
           1,
-          1,
           null,
+          1,
           1,
           1,
           1,
@@ -1163,7 +1237,11 @@
           1,
           null,
           1,
+          2,
+          null,
+          null,
           1,
+          2,
           null,
           null
         ]
@@ -1205,6 +1283,6 @@
         ]
       }
     },
-    "timestamp": 1623860448
+    "timestamp": 1623904437
   }
 }

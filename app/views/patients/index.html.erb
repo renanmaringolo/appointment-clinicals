@@ -1,5 +1,5 @@
 <h1>Lista de Pacientes</h1>
-<% @patients.each do |patient| %>
+<% @patients.first(20).each do |patient| %>
   <%= link_to patient.name, patient_path(patient) %>
 <% end %>
 <p><%= link_to 'Retornar ao menu principal', root_path %></p>

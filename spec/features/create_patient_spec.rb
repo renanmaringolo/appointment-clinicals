@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-feature 'create patient' do
+feature 'Create patient' do
   scenario 'successsfully' do
     user = create(:user)
     patient = create(:patient)
@@ -8,9 +8,9 @@ feature 'create patient' do
     login_as user
     visit root_path
     click_on 'Registrar Paciente'
-    fill_in 'Name', with: patient.name
-    fill_in 'Cpf', with: patient.cpf
-    fill_in 'Birth date', with: patient.birth_date
+    fill_in 'Nome', with: patient.name
+    fill_in 'CPF', with: patient.cpf
+    fill_in 'Data de Nascimento', with: patient.birth_date
 
     click_on 'Salvar'
 

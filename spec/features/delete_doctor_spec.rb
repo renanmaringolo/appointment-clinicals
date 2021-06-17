@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 feature 'Delete Doctor' do
-  scenario 'Successfuly' do
+  scenario 'successfuly' do
     user = create(:user)
     doctor = create(:doctor)
 

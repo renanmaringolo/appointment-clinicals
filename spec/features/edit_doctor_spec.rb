@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 feature 'Edit Doctor' do
-  scenario 'Successfuly' do
+  scenario 'successfuly' do
     user = create(:user)
     doctor = create(:doctor)
 
@@ -10,7 +10,7 @@ feature 'Edit Doctor' do
     click_on 'Lista de Médicos'
     click_on doctor.name
     click_on 'Editar'
-
+    
     fill_in 'Nome', with: doctor.name
     fill_in 'CRM', with: '555410005'
     fill_in 'CRM_UF', with: doctor.crm_uf

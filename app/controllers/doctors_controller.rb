@@ -1,5 +1,6 @@
 class DoctorsController < ApplicationController
   before_action :doctor_finder, only: %i(edit update destroy)
+  
   def new
     @doctor = Doctor.new
   end

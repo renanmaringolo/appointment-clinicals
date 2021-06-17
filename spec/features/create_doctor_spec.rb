@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-feature 'create doctor' do
+feature 'Create doctor' do
   scenario 'successsfully' do
     user = create(:user)
     doc = create(:doctor)
