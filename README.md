@@ -11,7 +11,7 @@ Este repositório foi criado para propor a solução do seguinte desafio: Clinic
 3) Baixar este repositório com o comando: git clone git@github.com:renanmaringolo/appointment-clinicals.git
 
 ### Testando a aplicação
-Atualmente o projeto conta com xx,xx% de cobertura de teste, de acordo com o SimpleCov.
+Atualmente o projeto conta com 96.71% de cobertura de teste, de acordo com o SimpleCov.
 
 ## Rodando o projeto localmente
 1) Executar 'docker-compose build web'
@@ -35,6 +35,6 @@ Atualmente o projeto conta com xx,xx% de cobertura de teste, de acordo com o Sim
 * Byebug (ferramenta para debuggin, caso preciso identificar alguma falha no meu teste e analisar como estão chegando dados);
 * Devise (é uma solução de autenticação para Rails criada com Warden que prevê vários módulos de autenticação);
 * Capybara (responsável por simular como um usuário interage com aplicações web);
-* SimpleCalendar (é uma ferramenta para renderizar dados em forma de calendário. Pode resolver uma questão de frontend de forma bem simples e clara)
+* SimpleCalendar (é uma ferramenta para renderizar dados em forma de calendário. Decidi utilizar para me entregar um front        simples para que tenhamos uma visualização minimamente clara das consultas;
 * Faker (é uma ferramenta que tem o intuito de criar dados falsos: nome de pessoas, endereços, CEPs, emails, telefones..);
 * Factory Bot (gerar objetos para os testes automatizados de forma pré-definida, alterando uma informação do obejto somente se necessário);
