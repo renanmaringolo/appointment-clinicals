@@ -3,5 +3,6 @@
 <h2><%= "CPF: #{@patient.cpf}" %></h2>
 <h2><%= "Data de Nascimento: #{@patient.birth_date}" %></h2>
 <p><%= link_to 'Editar', edit_patient_path(@patient) %></p>
+<p><%= link_to 'Excluir', patient_path(@patient), method: :delete %></p>
 
 <p><%= link_to 'Retornar ao menu principal', root_path %></p>

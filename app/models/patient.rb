@@ -3,7 +3,7 @@ class Patient < ApplicationRecord
   validates :cpf, length: { is: 11 }, presence: true
   validates :birth_date, presence: true
 
-  has_many :appointments
+  has_many :appointments, dependent: :destroy
 
   def name_cpf
     "#{name} - #{cpf}"

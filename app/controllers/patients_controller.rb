@@ -1,5 +1,5 @@
 class PatientsController < ApplicationController
-  before_action :patient_finder, only: %i(edit update)
+  before_action :patient_finder, only: %i(edit update destroy)
 
   def new
     @patient = Patient.new
@@ -32,6 +32,16 @@ class PatientsController < ApplicationController
       redirect_to @patient
     else
       render :edit
+    end
+  end
+
+  def destroy
+    if @patient.destroy
+      flash[:notice] = 'Perfil excluído com sucesso.'
+      redirect_to patients_path
+    else
+      flash[:alert] = 'Paciente não pôde ser excluído por algum motivo'
+      redirect_to patients_path
     end
   end
 
