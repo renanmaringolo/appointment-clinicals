@@ -38,6 +38,12 @@ class AppointmentsController < ApplicationController
     end
   end
 
+  def destroy
+    @appointment.destroy
+    flash[:alert] = 'Consulta excluída com sucesso!'
+    redirect_to appointments_path    
+  end
+
   private
 
   def appointment_finder
