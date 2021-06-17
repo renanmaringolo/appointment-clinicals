@@ -1,5 +1,8 @@
 # README
 
+![image](https://user-images.githubusercontent.com/36428132/122450615-9570ee80-cf7d-11eb-94c4-0b32f9a0dcea.png)
+
+
 Este repositório foi criado para propor a solução do seguinte desafio: Clinicals Appointments.
 
 ## <a name="tech_info"></a>Requisitos
