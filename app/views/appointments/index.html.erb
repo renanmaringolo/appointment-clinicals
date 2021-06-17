@@ -1,5 +1,8 @@
 <h1>Lista de Consultas</h1>
-<% @appointments.each do |appointment| %>
-  <%= link_to appointment.doctor.name, appointment_path(appointment) %>
-<% end %>
 <p><%= link_to 'Retornar ao menu principal', root_path %></p>
+<%= week_calendar(attribute: :starts_at) do |date| %>
+  <%= date %>
+  <% @appointments.each do |appointment| %>
+    <%= link_to "Paciente #{appointment.patient.name}", appointment_path(appointment) %>
+  <% end %>
+<% end %>

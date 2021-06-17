@@ -1,4 +1,5 @@
 <h1>Detalhes da Consulta</h1>
-<p><%= @appointment.doctor.name_crm %></p>
-<p><%= @appointment.patient.name_cpf %></p>
+<p><%= "Médico: #{@appointment.doctor.name_crm}" %></p>
+<p><%= "Paciente: #{@appointment.patient.name_cpf}" %></p>
+<p><%= "Data da Consulta: #{@appointment.starts_at}" %></p>
 <p><%= link_to 'Retornar ao menu principal', root_path %></p>
