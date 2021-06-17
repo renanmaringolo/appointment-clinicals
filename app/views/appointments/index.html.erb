@@ -3,7 +3,6 @@
 <%= month_calendar do |date| %>
   <%= date.day %>
   <% @appointments.select { |m| m.starts_at.to_date == date }.each do |appointment| %> 
-    <div><%= appointment.patient.name %></div>
-    <%= link_to "Paciente #{appointment.patient.name}", appointment_path(appointment) %>
+    <%= link_to "#{appointment.patient.name} - #{appointment.starts_at.to_formatted_s(:short)}", appointment_path(appointment) %>
   <% end %>
 <% end %>
