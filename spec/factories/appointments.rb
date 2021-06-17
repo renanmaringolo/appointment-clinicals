@@ -1,15 +1,7 @@
 FactoryBot.define do
   factory :appointment do
-    starts_at do
-      Faker::Time.between(from: DateTime.now, to: DateTime.now).
-        change(hour: 9, min: 0, sec: 0)
-    end
-
-    ends_at do
-      Faker::Time.between(from: DateTime.now, to: DateTime.now).
-        change(hour: 9, min: 30, sec: 0)
-    end
-
+    starts_at { DateTime.now }
+    ends_at { starts_at + 15.minutes }
     doctor { FactoryBot.create(:doctor).id }
     patient { FactoryBot.create(:patient).id }
   end

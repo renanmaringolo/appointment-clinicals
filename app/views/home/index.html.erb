@@ -3,7 +3,7 @@
 <% if user_signed_in?  %>
   <span>Olá, </span><%= current_user.email %>
 <p></p>
-<p><%= link_to "Ver Consultas Agendadas", appointments_path %></p>
+<p><%= link_to "Calendário de Consultas Agendadas", appointments_path %></p>
 <p><%= link_to "Registrar Médico", new_doctor_path %></p>
 <p><%= link_to "Registrar Paciente", new_patient_path %></p>
 <p><%= link_to "Marcar Consulta", new_appointment_path %></p>

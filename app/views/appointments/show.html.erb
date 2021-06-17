@@ -2,4 +2,7 @@
 <p><%= "Médico: #{@appointment.doctor.name_crm}" %></p>
 <p><%= "Paciente: #{@appointment.patient.name_cpf}" %></p>
 <p><%= "Data da Consulta: #{@appointment.starts_at}" %></p>
+<p><%= link_to 'Editar', edit_appointment_path(@appointment) %></p>
+<p><%= link_to 'Excluir', appointment_path(@appointment), method: :delete %></p>
+
 <p><%= link_to 'Retornar ao menu principal', root_path %></p>

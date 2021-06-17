@@ -17,5 +17,6 @@ feature 'Edit Doctor' do
     click_on 'Salvar'
 
     expect(page).to have_content('Médico atualizado com sucesso.')
+    expect(page).to have_content(doctor.name)
   end
 end
